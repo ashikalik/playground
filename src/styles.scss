@@ -1,1 +1,294 @@
-/* You can add global styles to this file, and also import other style files */
+@import './scss/themes/evento-light/evento-theme-light.scss';
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+ }
+
+body:lang(ar) {
+    font-family: font-family('sky');
+    font-weight: normal;
+    text-align: right;
+}
+
+body:lang(en) {
+    font-family: font-family('bahnschrift');
+    font-weight: lighter;
+    text-align: left;
+}
+
+.evento-nav-bar {
+    background-color: theme-color('background', 'light');
+    
+    color: theme-color('foreground', 'dark');
+
+    .nav-link {
+        color: theme-color('foreground', 'base');
+    }
+}
+
+.evento-img-featured {
+    max-width:300px;
+}
+
+.evento-section-title {
+    color: theme-color('foreground', 'base');
+    @include text-setting('lg');
+}
+
+.evento-section-title:lang(ar) {
+    text-align: right;
+}
+
+.title-underlined {
+    padding-bottom:5px;
+    border-bottom: 1px solid theme-color('gray-lighter', 'base');
+}
+
+
+.evento-text-faded {
+    color: theme-color('gray-medium', 'base');
+}
+
+.evento-text-primary, .evento-text-primary:hover {
+    color: theme-color('primary', 'base');
+}
+
+// .evento-input {
+//     border-radius: calc(1.125rem + 1px);
+//     border-color: theme-color('foreground', 'base');
+//     padding: 0.375rem 1.25rem;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+// }
+/* Select */
+
+.evento-select:lang(en) {
+    //padding-right: 30px !important;
+    padding-right: 1.5rem;
+    + i.fas {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        pointer-events: none;
+    }
+}
+
+.evento-select:lang(ar) {
+    padding-left: 1.5rem;
+
+    + i.fas {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        pointer-events: none;
+    }
+}
+
+/* Radio */
+input[type="radio"]:lang(en) {
+    + label {
+        margin-left : 0px;
+        margin-right : 0px;
+    }
+}
+
+input[type="radio"]:lang(ar) {
+    + label {
+        margin-left : 0px;
+        margin-right : 20px;
+    }
+}
+/* Checkbox */
+input[type="checkbox"]:lang(en) {
+    + label {
+        margin-left : 0px;
+        margin-right : 0px;
+    }
+}
+
+input[type="checkbox"]:lang(ar) {
+    + label {
+        margin-left : 0px;
+        margin-right : 20px;
+    }
+}
+
+
+/* Form Field */
+.evento-form-field {
+    border-radius: calc(1.125rem + 1px);
+    background: theme-color('background', 'light');
+    border: 1px solid;
+    border-color: theme-color('gray-light', 'base');
+    padding: 0.375rem 1.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.evento-form-field:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem theme-color('gray-light', 'light');
+    border-color: theme-color('gray-light', 'base');
+}
+
+.evento-form-error {
+    color:theme-color('primary', 'light');
+    @include text-setting('xs');
+    padding:2px 20px 0 20px;
+}
+
+/* Buttons */
+.evento-button {
+    border-radius: calc(1.125rem + 1px);
+    padding: 0.375rem 1.5rem;
+}
+
+.evento-button-sm {
+    border-radius: calc(1.125rem + 1px);
+    padding: 0.175rem 0.8rem;
+}
+
+.evento-button-xs {
+    border-radius: calc(1.125rem + 1px);
+    padding: 0.1rem 0.7rem;
+}
+
+//Primary Button
+.evento-button-primary {
+    background-color: theme-color('primary', 'base');
+    color: theme-color('background', 'base');
+}
+.evento-button-primary:disabled {
+    background-color: theme-color('primary', 'base');
+    color: theme-color('background', 'base');
+}
+
+.evento-button-primary:active {
+    background-color: theme-color('primary', 'dark');
+    color: theme-color('background', 'dark');
+}
+
+.evento-button-primary:hover {
+    background-color: theme-color('primary', 'dark');
+    color: theme-color('background', 'light');
+}
+
+.evento-button-primary:focus {
+    background-color: theme-color('primary', 'dark');
+    color: theme-color('background', 'light');
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem theme-color('primary', 'light');
+}
+
+//Secondary Button
+.evento-button-secondary {
+    background-color: theme-color('secondary', 'base');
+    color: theme-color('background', 'base');
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-secondary:active {
+    background-color: theme-color('secondary', 'dark');
+    color: theme-color('background', 'dark');
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-secondary:hover {
+    background-color: theme-color('secondary', 'dark');
+    color: theme-color('background', 'light');
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-secondary:focus {
+    background-color: theme-color('secondary', 'dark');
+    color: theme-color('background', 'light');
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem theme-color('secondary', 'light');
+}
+
+//Outline Secondary Button
+.evento-button-secondary-outline {
+
+    border: 2px solid theme-color('foreground', 'base');
+    color: theme-color('foreground', 'base');
+}
+
+.evento-button-secondary-outline:active {
+    border: 2px solid theme-color('foreground', 'base');
+    color: theme-color('background', 'dark');
+}
+
+.evento-button-secondary-outline:hover {
+    border: 2px solid theme-color('foreground', 'base');
+    color: theme-color('background', 'light');
+}
+
+.evento-button-secondary-outline:focus {
+    border: 2px solid theme-color('foreground', 'base');
+    color: theme-color('foreground', 'dark');
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem theme-color('foreground', 'base');
+}
+
+//Accent Button
+.evento-button-accent-one {
+    background-color: theme-color('accent-one', 'base');
+    color: theme-color('background', 'base');
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-accent-one:active {
+    background-color: theme-color('accent-one', 'dark');
+    color: theme-color('background', 'dark');
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-accent-one:hover {
+    background-color: theme-color('accent-one', 'dark');
+    color: theme-color('background', 'light');
+    box-shadow: 0 0 0 0.1rem transparent;
+}
+
+.evento-button-accent-one:focus {
+    background-color: theme-color('accent-one', 'dark');
+    color: theme-color('background', 'light');
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem theme-color('accent-one', 'light');
+}
+
+/**My Date picker style override */
+
+.mydp {
+   
+    border-radius: calc(1.125rem + 1px) !important;
+    background: theme-color('background', 'light') !important;
+    border: 1px solid !important;
+    border-color: theme-color('gray-light', 'base') !important;
+
+    padding: 0.075rem 1.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    input.selection {
+        color: theme-color('foreground', 'base') !important;
+        font-family: font-family('bahnschrift') !important;
+        font-size:1rem !important;
+    }
+
+    // input.selection:focus {
+    //     outline: 0;
+    //     box-shadow: 0 0 0 0.1rem theme-color('gray-light', 'light');
+    //     border-color: theme-color('gray-light', 'base');
+    // }
+
+}

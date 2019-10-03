@@ -1,0 +1,8 @@
+@import '../../scss/themes/evento-light/evento-theme-light.scss';
+
+.color-font-test {
+    padding:20px;
+    background: theme-color('secondary', 'base');
+    color: theme-color('primary', 'base');
+    font-size:text-scale('sm');
+}

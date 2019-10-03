@@ -1,0 +1,72 @@
+$theme-colors: (
+  'primary': (
+    'base': #e4253c,
+    'light': #e44c5d,
+    'dark': #bb0e22
+  ),
+  'secondary': (
+    'base': #0b121b,
+    'light': #0b1620,
+    'dark': #060b12
+  ),
+  'accent-one': (
+    'base': #43c0b5,
+    'light': #73c2bb,
+    'dark': #0d9c90
+  ),
+  'accent-two': (
+    'base': #f89f21,
+    'light': #f7b861,
+    'dark': #d17e09
+  ),
+  'background': (
+    'base': #fcfcfc,
+    'light': #ffffff,
+    'dark': #fafafa
+  ),
+  'foreground': (
+    'base': #393939,
+    'light': #6e6e6e,
+    'dark': #191919
+  ),
+  'negative': (
+    'base': #636161,
+    'light': #797676,
+    'dark': #525050
+  ),
+  'gray-lightest': (
+    'base': #f2f2f2,
+    'light': #fafafa,
+    'dark': #e2e2e2
+  ),
+  'gray-lighter': (
+    'base': #dddddd,
+    'light': #eeeeee,
+    'dark': #cccccc
+  ),
+  'gray-light': (
+    'base': #aaaaaa,
+    'light': #bbbbbb,
+    'dark': #999999
+  ),
+  'gray-medium': (
+    'base': #888888,
+    'light': #777777,
+    'dark': #666666
+  ),
+  'gray-dark': (
+    'base': #444444,
+    'light': #555555,
+    'dark': #333333
+  ),
+  'gray-darker': (
+    'base': #222222,
+    'light': #333333,
+    'dark': #111111
+  ),
+  'gray-darkest': (
+    'base': #1c1c1c,
+    'light': #222222,
+    'dark': #111111
+  )
+);
